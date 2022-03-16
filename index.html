@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LETTER</title>
+    <link rel="icon" type="image/jpg" href="/icon.svg">
+    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div  onclick="showModal()" class="game-rules">Como Jogar ?</div>
+    <div class="modal">
+        <div onclick="closeModal()" class="closeModal">X</div>
+        <h4 class="position-h4">COMO JOGAR</h3>
+        <p class="rules">Todos os dias, uma nova palavra aparecerá no Letreco para você adivinhar. Você terá 6 tentativas. Cada uma delas deve ser uma palavra que exista. Acentos e cedilha são ignorados, tanto nas tentativas, quanto na resposta. Após chutar, as letras mudarão para indicar o quão perto você está da resposta.</p>
+        <p class="rules">Se uma letra ficar azul, ela está presente na palavra e na posição correta.</p>
+        <div id="container-right">
+            <div class="positions position-right">L</div>
+            <div class="positions">A</div>
+            <div class="positions">P</div>
+            <div class="positions">I</div>
+            <div class="positions">S</div>
+        </div>
+        <p class="rules">Se uma letra ficar vermelha, ela NÃO está na palavra.</p>
+        <div id="container-right">
+            <div class="positions">T</div>
+            <div class="positions">A</div>
+            <div class="positions position-wrong">T</div>
+            <div class="positions">U</div>
+            <div class="positions">S</div>
+        </div>
+        <p class="rules">Se uma letra ficar amarela, ela está presente na palavra, mas na posição errada. </p>
+        <div id="container-right">
+            <div class="positions">M</div>
+            <div class="positions">O</div>
+            <div class="positions">T</div>
+            <div class="positions">O</div>
+            <div class="positions position-displaced">R</div>
+        </div>
+    </div>
+
+    <div class="app-container">
+        <div class="title-container">
+            <h1>
+                <span class="letter-blue">L</span>
+                <span class="letter-orange">E</span>
+                <span class="letter-vine">T</span>
+                <span class="letter-blue">T</span>
+                <span class="letter-orange">E</span>
+                <span class="letter-vine">R</span>
+            </h1>
+                
+        </div>
+        <div class="tile-container"></div>
+        <div class="keybord-container">
+            <div class="keyboard-row-container notAlphabetic space-keyboard" id="backspaceAndEnterRow"></div>
+            <div class="keyboard-row-container" id="keyboardFirstRow"></div>
+            <div class="keyboard-row-container" id="keyboardSecondRow"></div>
+            <div class="keyboard-row-container" id="keyboardThirdRow"></div>
+        </div>
+    </div>
+
+    <div id="social-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="github-icon">
+        <a href="https://github.com/gustamds" target="blank" class="github-link">GitHub</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="linkedin-icon"> 
+        <a href="https://www.linkedin.com/in/gustavo-mariano-da-silva-2016481b3/" target="blank" class="linkedin-link">Linkedin</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" class="instagram-icon">
+        <a href="https://www.instagram.com/gusta.mds/" target="blank" class="instagram-link">Instagram</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

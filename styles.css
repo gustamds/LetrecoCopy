@@ -1,0 +1,286 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-container {
+    text-align: center;
+    width: 510px;
+}
+
+.letter-blue {
+    color: 	#00CED1;
+}
+
+.letter-orange {
+    color: #E3B541;
+}
+.letter-vine {
+    color: #DF5858;
+}
+
+.app-container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tile-row {
+    margin-bottom: 1rem;
+    justify-content: center;
+    display:flex;
+    box-sizing: border-box;
+}
+
+.tile-column {
+    background-color: #f4f3f1;
+    color: #252525;
+    height: 40px;
+    width: 48px;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.typing {
+    border: 3px solid #252525;
+}
+
+.disabled {
+    border: 1px solid #252525;
+}
+
+.right {
+    background-color: #00CED1;
+    color:black;
+}
+
+.wrong {
+    background-color: #DF5858;
+    color:black;
+}
+
+.displaced {
+    background-color: #E3B541;
+    color:black;
+}
+
+.keyboard-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard-row-container {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    display: flex;
+}
+
+.keyboard-row-container.notAlphabetic {
+    width:100%
+}
+
+.keyboard-row-container:not(.notAlphabetic) button {
+    width: 8%;
+    height: 40px;
+    border-radius: 0.25rem;
+    margin-right: 0.25rem;
+    border: 1px solid #252525;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.backspacebtn{
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #DF5858;
+    border-radius: 0.25rem;
+    width: 30%;
+    margin-right: 1rem;
+}
+
+.backspacebtn:hover{
+    background-color: #9c3d3d;
+    transition: all 0.5s;
+}
+
+.enterbtn{
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #00CED1;
+    border-radius: 0.25rem;
+    width: 45%;
+    margin-right: 1rem;
+}
+
+.enterbtn:hover{
+    background-color: #00a5a7;
+    transition: all 0.5s;
+}
+
+.space-keyboard{
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.keyboardbtn{
+    border: none !important;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#social-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.github-link {
+    color: black;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.github-icon{
+    width: 20px;
+    margin-right: 0.1rem;
+}
+
+.linkedin-icon{
+    width: 20px;
+    margin-right: 0.1rem;
+}
+
+.linkedin-link {
+    color: black;
+    margin-right: 1rem;
+    text-decoration: none;
+} 
+
+.instagram-icon{
+    width: 20px;
+    margin-right: 0.1rem;
+}
+
+.instagram-link {
+    color: black;
+    text-decoration: none;
+}
+
+.game-rules{
+    color: white;
+    background: #252525;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 21%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.game-rules:hover{
+    background-color: #4c4c4c;
+    transition: all 0.5s;
+}
+
+#container-right{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.positions{
+    border: 1px solid black;
+    background-color: #f4f3f1;
+    height: 40px;
+    width: 40px;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.position-h4{
+    text-align: center;
+}
+
+.rules {
+    text-align: center;
+    font: 17px;
+}
+
+.position-right{
+    background-color: #00CED1;
+}
+
+.position-wrong{
+    background-color: #DF5858;
+}
+
+.position-displaced{
+    background-color: #E3B541;
+}
+
+.modal{
+    width: 580px;
+    height: 580px;
+    background-color: #e3e0db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: animateOpen;
+    animation-duration: 800ms;
+}
+
+.closeModal{
+    width: 30px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid black;
+    float: right;
+    cursor: pointer;
+}
+
+@keyframes animateOpen {
+    from{opacity: 1;}
+    from{opacity: 0;}
+}
+
+@media screen and (max-width: 1024px) {
+    .modal{
+        width: 300px;
+        height: 750px;
+        background-color: #e5e5e5;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        animation: animateOpen;
+        animation-duration: 800ms;
+    }
+    .game-rules{
+        width: 40%;
+    }
+}
