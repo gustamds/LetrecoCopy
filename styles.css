@@ -2,6 +2,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#container-letter-app{
+    overflow: hidden;
+}
+
 .title-container {
     text-align: center;
     width: 510px;
@@ -221,7 +225,6 @@
 
 .rules {
     text-align: center;
-    font: 17px;
 }
 
 .position-right{
@@ -282,5 +285,15 @@
     }
     .game-rules{
         width: 40%;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    p{
+        font-size: 14px;
+    }
+
+    .modal{
+        height: 620px;;
     }
 }

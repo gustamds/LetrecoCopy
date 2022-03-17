@@ -28,7 +28,7 @@ let currentRow = 0;
 let currentColumn = 0;
 
 //Definindo qual a palavra do jogo
-let letreco = "LETRA";
+let letreco = "VIGOR";
 
 //Mapeando a letra para comparacao
 let letrecoMap = {};
@@ -79,11 +79,11 @@ const checkGuess = () => {
   }
 
   if(guess === letreco) {
-      window.alert("Parabéns você acertou!")
+      window.alert("Você conseguiu!!!")
       return
   } {
       if(currentRow === rows -1) {
-          window.alert("Errou!")
+          window.alert("Hoje não é seu dia de sorte!")
       } else {
           moveToNextRow()
       }
