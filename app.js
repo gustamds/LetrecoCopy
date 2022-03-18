@@ -28,7 +28,7 @@ let currentRow = 0;
 let currentColumn = 0;
 
 //Definindo qual a palavra do jogo
-let letreco = "VIGOR";
+let letreco = "CRUEL";
 
 //Mapeando a letra para comparacao
 let letrecoMap = {};
