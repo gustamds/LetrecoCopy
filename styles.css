@@ -358,6 +358,9 @@
     .level-container{
         width: 40%;
     }
+    .tile-container{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 377px) {
@@ -367,5 +370,8 @@
 
     .modal{
         height: 620px;
+    }
+    .tile-container{
+        width: 100%;
     }
 }
