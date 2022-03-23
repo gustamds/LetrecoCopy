@@ -19,16 +19,16 @@ const keysSecondRow = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
 const keysThirdRow = ["Z", "X", "C", "V", "B", "N", "M"];
 
 //Definindo quantas chances a pessoa vai ter
-const rows = 6;
+const rows = 5;
 
 //Definindo o tamanho da palavra
-const columns = 5;
+const columns = 6;
 
 let currentRow = 0;
 let currentColumn = 0;
 
 //Definindo qual a palavra do jogo
-let letreco = "AFETO";
+let letreco = "PENSAR";
 
 //Mapeando a letra para comparacao
 let letrecoMap = {};
@@ -83,7 +83,7 @@ const checkGuess = () => {
       return
   } {
       if(currentRow === rows -1) {
-          window.alert("Hoje não é seu dia de sorte!, a palavra era: "  + letreco)
+          window.alert("Hoje não é seu dia de sorte!, a palavra era: " + letreco)
       } else {
           moveToNextRow()
       }

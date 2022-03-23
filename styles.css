@@ -265,6 +265,75 @@
     cursor: pointer;
 }
 
+.level-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #252525;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 21%;
+    margin-top: 0.5rem;
+}
+
+.level-container:hover{
+    background-color: #4c4c4c;
+    transition: all 0.5s;
+}
+
+.center-levels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-levels{
+    display: none;
+    margin-top: 1rem;
+}
+
+.level-easy{
+    margin-right: 1rem;
+    background-color: #00CED1;
+    text-decoration: none;
+    color: black;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+.level-easy:hover{
+    background-color: #09eef1;
+    transition: all 0.5s;
+}
+
+.level-medium{
+    margin-right: 1rem;
+    background-color: #E3B541;
+    text-decoration: none;
+    color: black;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+.level-medium:hover{
+    background-color: #f5dd09;
+    transition: all 0.5s;
+}
+
+.level-hard{
+    background-color: #DF5858;
+    text-decoration: none;
+    padding: 0.3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.level-hard:hover{
+    background-color: #ff0000;
+    transition: all 0.5s;
+}
+
 @keyframes animateOpen {
     from{opacity: 1;}
     from{opacity: 0;}
@@ -286,6 +355,9 @@
     .game-rules{
         width: 40%;
     }
+    .level-container{
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 377px) {
@@ -294,6 +366,6 @@
     }
 
     .modal{
-        height: 620px;;
+        height: 620px;
     }
 }
